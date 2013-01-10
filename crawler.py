@@ -11,7 +11,7 @@ class Crawler:
 
     def get_url(self, url):
         r = requests.get(self.url)
-        if r.status_code() == requests.codes.ok:
-            print r.json()
+        if r.status_code == requests.codes.ok:
+            print r.text()
         else:
             print "check the url"
