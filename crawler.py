@@ -1,7 +1,7 @@
 # 
 # Use Requests to make the crawling of information from the websites.
 #
-import Requests
+import requests
 
 class Crawler:
 
