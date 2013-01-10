@@ -9,7 +9,7 @@ class Crawler:
         self.url = 'http://www.carris.com.br'
         self.url_eptc = 'http://www.eptc.com.br/EPTC_Itinerarios/Linha.asp?cdEmp=3'
 
-    def get_url(self, url)
+    def get_url(self, url):
         r = requests.get(self.url)
         if r.status_code() == requests.codes.ok:
             print r.json()
